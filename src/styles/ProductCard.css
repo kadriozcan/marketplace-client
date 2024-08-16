@@ -1,0 +1,105 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    text-align: center;
+    padding: 10px;
+}
+
+.product-details h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.product-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.product-details .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.product-actions .view-details,
+.product-actions .edit-button,
+.product-actions .delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-actions .view-details {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.product-actions .edit-button {
+    background-color: #f39c12;
+    color: white;
+}
+
+.product-actions .delete-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.product-actions .view-details:hover,
+.product-actions .edit-button:hover,
+.product-actions .delete-button:hover {
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        margin: 10px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-actions .view-details,
+    .product-actions .edit-button,
+    .product-actions .delete-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

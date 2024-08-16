@@ -1,0 +1,45 @@
+.table-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.favorites-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.favorites-table th,
+.favorites-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.favorites-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.favorites-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.favorites-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0037;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c24a5e;
+}
